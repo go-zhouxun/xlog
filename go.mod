@@ -1,3 +1,3 @@
-module github.com/zhouxun1995/xlog
+module zhouxun/xlog
 
 go 1.12
