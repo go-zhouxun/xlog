@@ -19,7 +19,7 @@ func NewDailyWriter(path string) *Writer {
 }
 
 func (w *Writer) getLogPath() string {
-	return strings.ReplaceAll(w.path, ".log", fmt.Sprintf("%s.log", time.Now().Format("2006-01-02")))
+	return strings.ReplaceAll(w.path, ".log", fmt.Sprintf(".%s.log", time.Now().Format("2006-01-02")))
 }
 
 func (w *Writer) checkLogFile() error {
