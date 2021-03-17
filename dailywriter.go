@@ -18,7 +18,7 @@ func NewDailyWriter(path string) *Writer {
 }
 
 func (w *Writer) getLogPath() string {
-	return fmt.Sprintf("%s.%s", w.path, time.Now().Format("2006-01-02"))
+	return fmt.Sprintf("%s.%s", time.Now().Format("2006-01-02"), w.path)
 }
 
 func (w *Writer) checkLogFile() error {
